@@ -6,7 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        
         <style>                        
             body {
                 min-width: 448px;
@@ -38,9 +39,9 @@
                 background-color: #0aa6e1;
             }
             header h1, h3 {
-                font-size: 1.5em;
+                font-size: 1.7em;
                 color: white;
-                font-family: 'Roboto', sans-serif, Arial;
+                font-family: 'Calibri', sans-serif, Arial;
                 font-weight: 400 !important;
                 text-shadow: none;
             }
@@ -270,13 +271,13 @@
                 color: black;
             }
             .portfolio {
-                padding-top: 40px;
-                padding-bottom: 5px;
-                font-size: 20px;                
-                font-variant: all-petite-caps;
+                padding-top: 20px;
+                padding-bottom: 10px;
+                font-size: 20px;
+                font-family: Pacifico, Calibri;
             }
             .portfolio:hover {
-                color:#028cd5;
+                color:#0aa6e1;
             }
 
             footer {
@@ -314,9 +315,14 @@
             }
             .footer-connect:hover {
                 text-decoration: none;
-                -moz-transform: scale(1.1);
-                -webkit-transform: scale(1.1);
-                transform: scale(1.1);
+            }
+            .footer-connect:after {
+                position: absolute;
+                padding-top: 70px;
+                content: attr(data);
+                color: white;
+                font-size: 8px;
+                font-variant: all-petite-caps;
             }
         </style>
     </head>
@@ -469,15 +475,15 @@
                                 </h3>
                             </div>
                         </div>
-                        <div class='col-xs-7 col-xs-offset-5 portfolio'><a href="https://codepen.io/Roky/full/YqGqWg" target='_blank'>My Portfolio</a></div>
+                        <div class='col-xs-8 col-xs-offset-4 portfolio'><a href="https://codepen.io/Roky/full/YqGqWg" target='_blank'>My Portfolio</a></div>
                     </article>
                 </main>
                 <footer class='col-xs-12'>
                     <div class='col-xs-12 flex-box'>
-                        <a href='https://www.facebook.com/roky.zz' target='_blank' class='footer-connect' title='FACEBOOK'><i class='fa fa-facebook  fa-2x' ></i></a>
-                        <a href='https://www.linkedin.com/in/rok-%C5%BEigon-79024ab/' target='_blank' class='footer-connect' title='LINKEDIN'><i class='fa fa-linkedin fa-2x'></i></a>
-                        <a href='https://twitter.com/Rockson1k' target='_blank' class='footer-connect' title='TWITTER'><i class='fa fa-twitter  fa-2x'></i></a>
-                        <a href='https://github.com/Rock-son' target='_blank' class='footer-connect' title='GITHUB'><i class='fa fa-github   fa-2x'></i></a>                          
+                        <a href='https://www.facebook.com/roky.zz' target='_blank' data='https://www.facebook.com/roky.zz' class='footer-connect' title='FACEBOOK'><i class='fa fa-facebook  fa-2x' ></i></a>
+                        <a href='https://www.linkedin.com/in/rok-%C5%BEigon-79024ab/' data='https://www.linkedin.com/in/rok-%C5%BEigon-79024ab/' target='_blank' class='footer-connect' title='LINKEDIN'><i class='fa fa-linkedin fa-2x'></i></a>
+                        <a href='https://twitter.com/Rockson1k' target='_blank' data='https://twitter.com/Rockson1k' class='footer-connect' title='TWITTER'><i class='fa fa-twitter  fa-2x'></i></a>
+                        <a href='https://github.com/Rock-son' target='_blank' data='https://github.com/Rock-son' class='footer-connect' title='GITHUB'><i class='fa fa-github   fa-2x'></i></a>                          
                     </div>
                 </footer>
             </div>
