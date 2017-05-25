@@ -7,276 +7,310 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha256-NuCn4IvuZXdBaFKJOAcsU2Q3ZpwbdFisd5dux4jkQ5w=" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-        <link href="./style.css" rel="stylesheet">
-		<style>						
-			body {
-				min-width: 448px;
-				background-color: black;
-			}
-			section.container {
-				background-color: white;
-				min-height: 100vh;
-			}
-			header {
-				height: 12vh;
-				padding-left: 0px !important;
-				padding-right: 0px !important;
-			}
-			.stripe {
-				height: 2vh;
-				background-color: #028cd5;
-			}
-			.head {
-				height: 10vh;
-				position:relative;
-				z-index: 1;
-				display: -webkit-flex;
-				display: flex;
-				flex-wrap: wrap;
-				align-items: center;
-				-webkit-align-items: center;
-				-webkit-flex-wrap: wrap;
-				background-color: #0aa6e1;
-			}
-			header h1, h3 {
-				font-size: 1.5em;
-				color: white;
-				font-family: 'Roboto', sans-serif, Arial;
-				font-weight: 400 !important;
-				text-shadow: none;
-			}
-			header h3 {
-				font-size: 0.9em;
-				margin-top: 0px;
-			}
-			.postcript {
-				position: relative;
-				z-index: 0;
-				height: 2vh;
-				background-color: grey;
-				-webkit-box-shadow: 0px 2px 5px rgb(71,71,71) inset;
-				-moz-box-shadow: 0px 2px 5px rgb(71,71,71) inset;
-				box-shadow: 0px 2px 5px rgb(71,71,71) inset;
-			}
-			main {    
-				position: relative;
-				min-height: 77vh;
-				clear: both;    
-			}
-			.personal {
-				position: relative;
-				bottom: 0;
-				min-height: 77vh;
-				-webkit-box-shadow: 0px 0px 5px rgb(71,71,71) inset;
-				-moz-box-shadow: 0px 0px 5px rgb(71,71,71) inset;
-				box-shadow: 0px 5px 5px grey inset;
-			}
-			.personal > div > h3 {    
-				color: #0aa6e1;
-				font-weight: 700 !important;
-			}
-			.work > h3 {    
-				color: #0aa6e1;
-				font-weight: 700 !important;
-			}
-			.work {
-				position: relative;
-				min-height: 77vh;
-				bottom: 0;
-				overflow: auto;
-				color: #0aa6e1;
-				background-color: rgb(249,249,249);
-				-webkit-box-shadow: 2px 0px 5px black inset;
-				-moz-box-shadow: 2px 0px 5px black inset;
-				box-shadow: 2px 5px 5px grey inset;
-			}
+        <style>                        
+            body {
+                min-width: 448px;
+                background-color: black;
+            }
+            section.container {
+                background-color: white;
+                min-height: 100vh;
+            }
+            header {
+                height: 12vh;
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+            }
+            .stripe {
+                height: 2vh;
+                background-color: #028cd5;
+            }
+            .head {
+                height: 10vh;
+                position:relative;
+                z-index: 1;
+                display: -webkit-flex;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                -webkit-align-items: center;
+                -webkit-flex-wrap: wrap;
+                background-color: #0aa6e1;
+            }
+            header h1, h3 {
+                font-size: 1.5em;
+                color: white;
+                font-family: 'Roboto', sans-serif, Arial;
+                font-weight: 400 !important;
+                text-shadow: none;
+            }
+            header h3 {
+                font-size: 0.9em;
+                margin-top: 0px;
+            }
+            .postcript {
+                position: relative;
+                z-index: 0;
+                height: 2vh;
+                background-color: grey;
+                -webkit-box-shadow: 0px 2px 5px rgb(71,71,71) inset;
+                -moz-box-shadow: 0px 2px 5px rgb(71,71,71) inset;
+                box-shadow: 0px 2px 5px rgb(71,71,71) inset;
+            }
+            main {    
+                position: relative;
+                min-height: 77vh;
+                clear: both;    
+            }
+            .personal {
+                position: relative;
+                bottom: 0;
+                min-height: 77vh;
+                -webkit-box-shadow: 0px 0px 5px rgb(71,71,71) inset;
+                -moz-box-shadow: 0px 0px 5px rgb(71,71,71) inset;
+                box-shadow: 0px 5px 5px grey inset;
+            }
+            .personal > div > h3 {    
+                color: #0aa6e1;
+                font-weight: 700 !important;
+            }
+            .work > h3 {    
+                color: #0aa6e1;
+                font-weight: 700 !important;
+            }
+            .work {
+                position: relative;
+                min-height: 77vh;
+                bottom: 0;
+                overflow: auto;
+                color: #0aa6e1;
+                background-color: rgb(249,249,249);
+                -webkit-box-shadow: 2px 0px 5px black inset;
+                -moz-box-shadow: 2px 0px 5px black inset;
+                box-shadow: 2px 5px 5px grey inset;
+            }
 
-			main article h3 {
-				color: #0aa6e1;
-				margin-bottom: 30px;
-			}
-			hr {
-				color: lightgrey;
-				margin-top: 0px;
-				margin-bottom: 5px;
-			}
-			.personal .input {
-				margin-left: 2px;
-			}
-			.languages .input {
-				padding-left: 25px;
-			}
-			.languages p {
-				padding-right: 0;
-			}
-			.languages .a, .b, .c, .d {
-				display: inline-block;
-				height: 0.8em;
-				float: right;
-				border: none;
-				background-color: lightgrey;
-			}
-			.legend {
-				position: relative;
-				clear: both;
-				width: 1em;
-				height: 0.7em;
-			}
-			progress.write{
-				color: #028cd5;
-			}
-			progress.speak {
-				color: #0aa6e1;
-			}
-			progress.write::-webkit-progress-bar {
-				background: lightgrey;
-			}
-			progress.speak::-webkit-progress-bar {
-				background: lightgrey;
-			}
-			progress.speak::-webkit-progress-value {
-				background: #0aa6e1;
-			}
-			progress.write::-webkit-progress-value {
-				background: #028cd5;
-			}
-			progress.write::-moz-progress-bar {
-				background: #028cd5;
-			}
-			progress.speak::-moz-progress-bar {
-				background: #0aa6e1;
-			}
-			progress.write::progress-bar {
-				background: #028cd5;
-			}
-			progress.speak::progress-bar {
-				background: #0aa6e1;
-			}
-			.legend.speak {
-				display: inline-block;
-				position: relative;
-				background-color: #0aa6e1;
-			}
-			.legend.write {
-				display: inline-block;
-				position: relative;
-				background-color: #028cd5;
-			}
-			.text {
-				display: inline-block;         
-				position: relative;
-				margin-left: 15px;
-			}
-			.flex-box {
-				display: -webkit-inline-flex;
-				-webkit-justify-content: space-around;
-				-webkit-align-items: center;
-				display: inline-flex;
-				align-items: center;
-				justify-content: space-around;
-				flex-direction: row;
-			}
-			.block {
-				font-size: 0.8em;
-				font-variant: all-petite-caps;
-			}
-			.hobby {               
-				display: -webkit-inline-flex;
-				-webkit-justify-content: center;
-				-webkit-align-items: center;
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				flex-direction: row;
-				margin-bottom: 10px;
-				height: 30px;
-				width: 30px;
-				border-radius: 50%;
-				background-color: #0aa6e1;
-				-webkit-transition: transform .1s;
-				transition: transform .1s;
-			}
-			.hobby:hover {
-				-ms-transform: scale(1.1, 1.1);
-				-webkit-transform: scale(1.1, 1.1);
-				transform: scale(1.1, 1.1);
-			}
-			.fa {
-				color: white;
-				
-			}
-			.year {
-				display: -webkit-flex;
-				-webkit-justify-content: center;
-				-webkit-align-items: center;
-				display: flex;    
-				align-items: center;
-				justify-content: center;
-				flex-direction: row;
-				font-weight: 700;
-				color: grey;
-			}
-			.experiences {
-				color: grey;
-				border-left: 1px solid lightgrey;
-			}
-			.experiences > h3 {
-				margin-top: 0px;
-				margin-bottom: 10px;
-			}
-			main article h6 {
-				margin-left: 4%;
-			}
-			.svg_c {
-				margin-left: 30px;
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-			.svg_c::after {
-				content: attr(data);
-				color: black;
-			}
+            main article h3 {
+                color: #0aa6e1;
+                margin-bottom: 30px;
+            }
+            hr {
+                color: lightgrey;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+            .personal .input {
+                margin-left: 2px;
+                color: #484848;
+            }
+            .personal .input span {
+                margin-right: 5px;
+            }
+            .languages .input {
+                padding-left: 25px;
+            }
+            .languages p {
+                padding-right: 0;
+            }
+            .languages .a, .b, .c, .d {
+                display: inline-block;
+                height: 0.8em;
+                float: right;
+                border: none;
+                background-color: lightgrey;
+            }
+            .legend {
+                position: relative;
+                clear: both;
+                width: 1em;
+                height: 0.7em;
+            }
+            progress.write{
+                color: #028cd5;
+            }
+            progress.speak {
+                color: #0aa6e1;
+            }
+            progress.write::-webkit-progress-bar {
+                background: lightgrey;
+            }
+            progress.speak::-webkit-progress-bar {
+                background: lightgrey;
+            }
+            progress.speak::-webkit-progress-value {
+                background: #0aa6e1;
+            }
+            progress.write::-webkit-progress-value {
+                background: #028cd5;
+            }
+            progress.write::-moz-progress-bar {
+                background: #028cd5;
+            }
+            progress.speak::-moz-progress-bar {
+                background: #0aa6e1;
+            }
+            progress.write::progress-bar {
+                background: #028cd5;
+            }
+            progress.speak::progress-bar {
+                background: #0aa6e1;
+            }
+            .legend.speak {
+                display: inline-block;
+                position: relative;
+                background-color: #0aa6e1;
+            }
+            .legend.write {
+                display: inline-block;
+                position: relative;
+                background-color: #028cd5;
+            }
+            .text {
+                display: inline-block;         
+                position: relative;
+                margin-left: 15px;
+            }
+            .flex-box {
+                display: -webkit-inline-flex;
+                -webkit-justify-content: space-around;
+                -webkit-align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-direction: row;
+            }
+            .block {
+                font-size: 0.8em;
+                font-variant: all-petite-caps;
+            }
+            .hobby {               
+                display: -webkit-inline-flex;
+                -webkit-justify-content: center;
+                -webkit-align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                margin-bottom: 50px;
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+                background-color: #0aa6e1;
+                -webkit-transition: transform .1s;
+                transition: transform .1s;
+            }
+            .hobby:after {
+                position: absolute;
+                content: attr(data);
+                padding-top: 50px;
+                font-size: 11px;    
+                font-variant: all-petite-caps;
+                color: black;
+            }
+            @media all and (max-width: 1200px) {
+                .hobby:after {
+                    font-size: 9px;    
+                    font-variant: all-petite-caps;
+                    color: black;
+                }
+            }
+            @media all and (max-width: 990px) {
+                .hobby:after {
+                    font-size: 7px;    
+                    font-variant: all-petite-caps;
+                    color: black;
+                }
+            }
+            @media all and (max-width: 768px) {
+                .hobby:after {
+                    font-size: 12px;    
+                    font-variant: all-petite-caps;
+                    color: black;
+                }
+            }
 
-			footer {
-				display: -webkit-flex;
-				-webkit-justify-content: space-around;
-				display: flex;
-				justify-content: space-around;
-				height: 9vh;
-				background-color: #0aa6e1;
-				-webkit-box-shadow: 0px 1px 15px black;
-				box-shadow: 0px 1px 15px black;
-				-webkit-touch-callout: none;
-				-webkit-user-select: none;
-				-khtml-user-select: none;
-				-moz-user-select: none;
-				-ms-user-select: none;
-				user-select: none;
-			}
-			.footer-connect {
-				display: -webkit-inline-flex;
-				-webkit-justify-content: center;
-				-webkit-align-items: center;
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				flex-direction: row;
-				height: 50px;
-				width: 50px;
-				border-radius: 50%;
-				background-color: #028cd5;
-				color: black;
-			}
-			.footer-connect:hover {
-				text-decoration: none;
-			}
-		</style>
+            .fa {
+                color: white;
+                
+            }
+            .year {
+                display: -webkit-flex;
+                -webkit-justify-content: center;
+                -webkit-align-items: center;
+                display: flex;    
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                font-weight: 700;
+                color: grey;
+            }
+            .experiences {
+                color: grey;
+                border-left: 1px solid lightgrey;
+            }
+            .experiences > h3 {
+                margin-top: 0px;
+                margin-bottom: 10px;
+                font-weight: 700;
+            }
+            main article h6 {
+                margin-left: 4%;
+            }
+            .svg_c {
+                margin-left: 30px;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .svg_c::after {
+                content: attr(data);
+                color: black;
+            }
+
+            footer {
+                display: -webkit-flex;
+                -webkit-justify-content: space-around;
+                display: flex;
+                justify-content: space-around;
+                height: 9vh;
+                background-color: #0aa6e1;
+                -webkit-box-shadow: 0px 1px 15px black;
+                box-shadow: 0px 1px 15px black;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            .footer-connect {
+                display: -webkit-inline-flex;
+                -webkit-justify-content: center;
+                -webkit-align-items: center;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                background-color: #028cd5;
+                color: black;
+                -webkit-transition: transform .3s;
+                transition: transform .3s;
+                box-shadow: 0px 1px 3px black;
+            }
+            .footer-connect:hover {
+                text-decoration: none;
+                -moz-transform: scale(1.1);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+            }
+        </style>
     </head>
-	
     <body>
         <section class='container'>
             <div class='row'>
@@ -284,7 +318,7 @@
                     <div class='col-xs-12 stripe'></div>
                     <div class='col-xs-12 head'>
                         <div class='col-xs-11 col-xs-offset-1'>
-                            <h1 class='col-xs-10 cols-xs-offset-2'>John Doe</h1>
+                            <h1 class='col-xs-10 cols-xs-offset-2'>Rok Žigon</h1>
                             <h3 class='col-xs-10 cols-xs-offset-2'>Web Developer</h3>
                         </div>
                     </div>
@@ -295,30 +329,30 @@
                     <article class='col-xs-12 col-sm-4 personal'>
                         <div class='col-xs-10 col-xs-offset-1'>
                             <h3 class='col-xs-12'>Personal info:</h3>                            
-                            <p class='col-xs-12 input'><strong>Name:</strong></p>
+                            <p class='col-xs-12 input'><span><strong>Name:</strong></span>Rok Žigon</p>
                             <hr class='col-xs-8'>
-                            <p class='col-xs-12 input'><strong>Date birth.:</strong></p>
+                            <p class='col-xs-12 input'><span><strong>Date birth.:</strong></span>15.05.1978</p>
                             <hr class='col-xs-8'>
-                            <p class='col-xs-12 input'><strong>Nationality:</strong></p>
+                            <p class='col-xs-12 input'><span><strong>Nationality:</strong></span>slovenian</p>
                             <hr class='col-xs-8'>
-                            <p class='col-xs-12 input'><strong>Mail:</strong></p>
+                            <p class='col-xs-12 input'><span><strong>Mail:</strong></span>rok.zigon@outlook.com</p>
                             <hr class='col-xs-8'>
-                            <p class='col-xs-12 input'><strong>Tel:</strong></p>
+                            <p class='col-xs-12 input'><span><strong>Tel:</strong></span></p>
                             <hr class='col-xs-8'>
                         </div>
                         <div class='col-xs-9 col-xs-offset-1 languages'>
                             <h3 class='col-xs-12'>Languages:</h3>
                             <div class='row'>
                                 <div class='col-xs-5 col-sm-12 col-lg-6 input'><strong>English:</strong></div>
-                                <div class='col-xs-6 col-sm-12 col-lg-5'>
+                                <div class='col-xs-6 col-sm-12 col-md-10 col-lg-5 col-sm-offset-1 col-md-offset-0'>
                                     <progress class='a speak' title='SPEAK: 9' max='100' value='95'></progress>
                                     <progress class='a write' title='WRITE: 9' max='100' value='95'></progress>
                                 </div>
                             </div>
                             <hr class='col-xs-8'>
                             <div class='row'>
-                                <div class='col-xs-5 col-sm-12 col-lg-6 input'><strong>Spanish:</strong></div>
-                                <div class='col-xs-6 col-sm-12 col-lg-5'>
+                                <div class='col-xs-5 col-sm-12 col-lg-6 input'><strong>Serb-Cro:</strong></div>
+                                <div class='col-xs-6 col-sm-12 col-md-10 col-lg-5 col-sm-offset-1 col-md-offset-0'>
                                     <progress class='b speak' title='SPEAK: 8' max='100' value='80'></progress>
                                     <progress class='b write' title='WRITE: 8' max='100' value='80'></progress>
                                 </div>
@@ -326,14 +360,14 @@
                             <hr class='col-xs-8'>
                             <div class='row'>
                                 <div class='col-xs-5 col-sm-12 col-lg-6 input'><strong>German:</strong></div>
-                                <div class='col-xs-6 col-sm-12 col-lg-5'>
-                                    <progress class='c speak' title='SPEAK: 5' max='100' value='50'></progress>
+                                <div class='col-xs-6 col-sm-12 col-md-10 col-lg-5 col-sm-offset-1 col-md-offset-0'>
+                                    <progress class='c speak' title='SPEAK: 4' max='100' value='40'></progress>
                                     <progress class='c write' title='WRITE: 6' max='100' value='60'></progress>
                                 </div>
                             </div><hr class='col-xs-8'>
                             <div class='row'>
                                 <div class='col-xs-5 col-sm-12 col-lg-6 input'><strong>Italian:</strong></div>
-                                <div class='col-xs-6 col-sm-12 col-lg-5'>
+                                <div class='col-xs-6 col-sm-12 col-md-10 col-lg-5 col-sm-offset-1 col-md-offset-0'>
                                     <progress class='d speak' title='SPEAK: 2' max='100' value='20'></progress>
                                     <progress class='d write' title='WRITE: 2' max='100' value='20'></progress>
                                 </div>
@@ -345,10 +379,10 @@
                         <div class='col-xs-10 col-xs-offset-1 hobies'>
                             <h3 class='col-xs-12'>Hobies:</h3>
                             <div class='col-xs-12 flex-box'>
-                                <div class='hobby' title='GAMING'><i class='fa fa-gamepad fa-lg' aria-hidden='true'></i></div>
-                                <div class='hobby' title='LEARNING'><i class='fa fa-leanpub fa-lg' aria-hidden='true'></i></div>
-                                <div class='hobby' title='SLACK'><i class='fa fa-slack fa-lg' aria-hidden='true'></i></div>
-                                <div class='hobby' title='SKIING'><i class='fa fa-pied-piper-alt  fa-lg' aria-hidden='true'></i></div>                       
+                                <div class='hobby' data='GAMING' title='GAMING'><i class='fa fa-gamepad fa-lg' aria-hidden='true'></i></div>
+                                <div class='hobby' data='LEARNING' title='LEARNING'><i class='fa fa-leanpub fa-lg' aria-hidden='true'></i></div>
+                                <div class='hobby' data='SKIING' title='SKIING'><i class='fa fa-pied-piper-alt  fa-lg' aria-hidden='true'></i></div>                                
+                                <div class='hobby' data='HIKING' title='HIKING'><i class='fa fa-picture-o  fa-lg' aria-hidden='true'></i></div>                       
                             </div>
                         </div>
 
@@ -356,26 +390,26 @@
                     <article class='col-xs-12 col-sm-8 work'>
                         <h3>Working experiences:</h3>
                         <div class='row'>
-                            <div class='col-xs-2 year'>2005 - 2010</div>
+                            <div class='col-xs-2 year'>2005 - 2014</div>
                             <div class='col-xs-10 experiences'>
-                                <h3>Workplace 1</h3>
-                                <h6>Workplace full addres</h6>
+                                <h3>Technician of Informatics - ERP developement & support</h3>
+                                <h6><strong>Elektro Ljubljana d.d, Slovenska c. 56, 1000 Ljubljana</strong></h6>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Building and supporting business applications (C#, F&T, Excel VBA, Access, MSSQL)</li>
+                                    <li>Occasional Client support (Win XP, 7)</li>
+                                    <li>Occasional printing & HW support</li>
                                 </ul>
                             </div>
                         </div>
                         <div class='row'>
-                            <div class='col-xs-2 year'>2010 </div>
+                            <div class='col-xs-2 year'>2014 - 2015</div>
                             <div class='col-xs-10 experiences'>
-                                <h3>Workplace 2</h3>
-                                <h6>Workplace full addres</h6>
+                                <h3>IT Support Technician</h3>
+                                <h6><strong>Lidl Slovenija d.o.o. k.d, Pod lipami 1, 1218 Komenda</strong></h6>
                                 <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
+                                    <li>Client Support (Win XP, 8.1)</li>
+                                    <li>Printing, Tel & Fax support</li>
+                                    <li>shops - HW and network support</li>
                                 </ul>
                             </div>
                         </div>
@@ -386,57 +420,54 @@
                               <text font-family="sans-serif" font-weight="700" fill="black" x="18" y="40" font-size="12px">React</text>                              
                             </svg>
                             <svg class='svg_c' width="70" height="70">
-                              <path d="M35,5 A30,30 0 1,0 55,12" stroke="#028cd5"; stroke-width="7"; fill="none";/>
+                              <!--<path d="M35,5 A30,30 0 1,0 55,12" stroke="#028cd5"; stroke-width="7"; fill="none";/>-->
+                              <path d="M35,5 A30,30 0 1,0 65,33" stroke="#028cd5"; stroke-width="7"; fill="none";/>
                               <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="40" font-size="12px">Redux</text>              
                             </svg>
                             <svg class='svg_c' width="70" height="70">
                               <path d="M35,5 A30,30 0 1,0 65,33" stroke="#028cd5"; stroke-width="7"; fill="none";/>
-                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="32" font-size="12px">React</text>
-                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="45" font-size="12px">Router</text>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="32" font-size="12px">Java-</text>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="45" font-size="12px">Script</text>
                             </svg>
                             <svg class='svg_c' width="70" height="70">
-                              <path d="M35,5 A30,30 0 1,0 60,53" stroke="#028cd5"; stroke-width="7"; fill="none";/>                              
-                            </svg>
-                            </svg>
-                            <svg class='svg_c' width="70" height="70">
-                              <path d="M35,5 A30,30 0 1,0 35,65" stroke="#028cd5"; stroke-width="7"; fill="none";/>                              
-                            </svg>
+                              <path d="M35,5 A30,30 0 1,0 60,53" stroke="#028cd5"; stroke-width="7"; fill="none";/>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="35" font-size="12px">Boot-</text>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="16" y="45" font-size="12px">strap 3</text>
                             </svg>
                             <svg class='svg_c' width="70" height="70">
-                              <path d="M35,5 A30,30 0 0,0 15,57" stroke="#028cd5"; stroke-width="7"; fill="none";/>                              
-                            </svg>
+                              <path d="M35,5 A30,30 0 1,0 60,53" stroke="#028cd5"; stroke-width="7"; fill="none";/>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="12" y="38" font-size="12px">Webpack</text>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="32" y="50" font-size="12px">2</text>
                             </svg>
                             <svg class='svg_c' width="70" height="70">
-                              <path d="M35,5 A25,25 0 0,0 15,38" stroke="#028cd5"; stroke-width="7"; fill="none";/>                              
+                              <path d="M35,5 A30,30 0 1,0 60,53" stroke="#028cd5"; stroke-width="7"; fill="none";/>
+                              <text font-family="sans-serif" font-weight="700" fill="black" x="17" y="40" font-size="12px">jQuery</text>   
                             </svg>
                         </div>
                         <h3>Education:</h3>
                         <div class='row'>
-                            <div class='col-xs-2 year'>2000 - 2005</div>
+                            <div class='col-xs-2 year'>1993 - 1997</div>
                             <div class='col-xs-10 experiences'>
-                                <h3>Education 1</h3>
-                            </div>
-                        </div>
-                        <div class='row'>
-                            <div class='col-xs-2 year'>2006 - 2012</div>
-                            <div class='col-xs-10 experiences'>
-                                <h3>Education 2</h3>
+                                <h3>Gimnazija Ledina - <a href="https://en.wikipedia.org/wiki/Baccalaur%C3%A9at">Baccalauréat</a></h3>
                             </div>
                         </div>
                         <div class='row'>
                             <div class='col-xs-2 year'>2016 - 2017</div>
                             <div class='col-xs-10 experiences'>
-                                <h3>Free Code Camp</h3>
+                                <h3>
+                                    <a href="https://www.freecodecamp.com/rock-son">Free Code Camp</a> - 
+                                    <a href="https://www.freecodecamp.com/rock-son/front-end-certification">Front End Certification</a>
+                                </h3>
                             </div>
                         </div>
                     </article>
                 </main>
                 <footer class='col-xs-12'>
                     <div class='col-xs-12 flex-box'>
-                        <a href='https://facebook.com' target='_blank' class='footer-connect' title='FACEBOOK'><i class='fa fa-facebook  fa-2x' ></i></a>
-                        <a href='https://linkedin.com' target='_blank' class='footer-connect' title='LINKEDIN'><i class='fa fa-linkedin fa-2x'></i></a>
-                        <a href='https://twitter.com' target='_blank' class='footer-connect' title='TWITTER'><i class='fa fa-twitter  fa-2x'></i></a>
-                        <a href='https://github.com' target='_blank' class='footer-connect' title='GITHUB'><i class='fa fa-github   fa-2x'></i></a>                          
+                        <a href='https://www.facebook.com/roky.zz' target='_blank' class='footer-connect' title='FACEBOOK'><i class='fa fa-facebook  fa-2x' ></i></a>
+                        <a href='https://www.linkedin.com/in/rok-%C5%BEigon-79024ab/' target='_blank' class='footer-connect' title='LINKEDIN'><i class='fa fa-linkedin fa-2x'></i></a>
+                        <a href='https://twitter.com/Rockson1k' target='_blank' class='footer-connect' title='TWITTER'><i class='fa fa-twitter  fa-2x'></i></a>
+                        <a href='https://github.com/Rock-son' target='_blank' class='footer-connect' title='GITHUB'><i class='fa fa-github   fa-2x'></i></a>                          
                     </div>
                 </footer>
             </div>
